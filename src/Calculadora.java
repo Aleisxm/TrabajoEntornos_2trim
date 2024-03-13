@@ -28,7 +28,7 @@ public class Calculadora {
                     sum1 = sc.nextInt();
                     System.out.print("Escribe el segundo numero: ");
                     sum2 = sc.nextInt();
-                    sum3 = operaciones.Sumar(sum1, sum2);
+                    sum3 = Sumar.Sumar(sum1, sum2);
                     System.out.println(sum1 + " + " + sum2 + " = " + sum3);
                     break;
 
@@ -37,7 +37,7 @@ public class Calculadora {
                     sum1 = sc.nextInt();
                     System.out.print("Escribe el segundo numero: ");
                     sum2 = sc.nextInt();
-                    sum3 = operaciones.Restar(sum1, sum2);
+                    sum3 = Restar.Restar(sum1, sum2);
                     System.out.println(sum1 + " - " + sum2 + " = " + sum3);
                     break;
 
@@ -46,7 +46,7 @@ public class Calculadora {
                     sum1 = sc.nextInt();
                     System.out.print("Escribe el segundo numero: ");
                     sum2 = sc.nextInt();
-                    sum3 = operaciones.Multiplicar(sum1, sum2);
+                    sum3 = Multiplicar.Multiplicar(sum1, sum2);
                     System.out.println(sum1 + " * " + sum2 + " = " + sum3);
                     break;
 
@@ -58,7 +58,7 @@ public class Calculadora {
                     if (sum2 == 0) {
                         sum3 = 0;
                     } else {
-                        sum3 = operaciones.Dividir(sum1, sum2);
+                        sum3 = Dividir.Dividir(sum1, sum2);
                         System.out.println(sum1 + " / " + sum2 + " = " + sum3);
                     }
                     break;
